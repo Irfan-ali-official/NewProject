@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import { useState, useEffect } from "react";
 import { App, Brand } from "./App";
+import ExpenseForm from "./ExpenseForm";
 
 import reportWebVitals from "./reportWebVitals";
 class MyApp extends React.Component {
@@ -102,13 +103,15 @@ ReactDOM.render(
   <React.StrictMode>
     {/* <App />
     <Garage /> */}
-    <Vehicle val={true} />
+    {/* <Vehicle val={true} />
     <Example />
     <Counter />
-    <Navbar />
+    <Navbar /> */}
+    <ExpenseForm />
   </React.StrictMode>,
   document.getElementById("root")
 );
+function hello() {}
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
